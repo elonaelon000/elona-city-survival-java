@@ -1,0 +1,16 @@
+# Java build output
+*.class
+out/
+bin/
+build/
+target/
+
+# Runtime save file
+savegame.txt
+
+# IDE / OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
