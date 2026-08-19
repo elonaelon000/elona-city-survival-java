@@ -2,41 +2,31 @@
 
 A Java Swing survival game set in a tile-based city environment. The player explores the map, collects useful items, fights enemies, manages health and inventory, and tries to survive long enough to reach the objective.
 
-## Playable Build
+## Run the Game
 
-Want to run the game without compiling the source code?
+The source code is fully visible in this repository. To run the game, download the repository and use the included launcher for your operating system.
 
-**[Download the playable game package](dist/City-Survival-Game.zip)**
+### Windows
 
-The package includes the runnable JAR, game assets, map file, and launch scripts.
+1. Click **Code → Download ZIP** on GitHub.
+2. Extract the ZIP.
+3. Double-click `run-game-windows.bat`.
 
-### Run on Windows
+### macOS
 
-1. Download and extract `City-Survival-Game.zip`.
-2. Open the extracted `package` folder.
-3. Double-click `run-windows.bat`.
+1. Click **Code → Download ZIP** on GitHub.
+2. Extract the ZIP.
+3. Double-click `run-game-mac.command`.
 
-### Run on macOS
-
-1. Download and extract `City-Survival-Game.zip`.
-2. Open the extracted `package` folder.
-3. Double-click `run-mac.command`.
-
-If macOS blocks the launcher, open Terminal in that folder and run:
+If macOS blocks the launcher, right-click it and choose **Open**, or open Terminal in the project folder and run:
 
 ```bash
-java -jar CitySurvival.jar
+bash run-game-mac.command
 ```
 
-### Run on Linux
+The launchers compile the Java source automatically and start the game. Java 17 or newer is required.
 
-Extract the package, open a terminal inside the `package` folder, and run:
-
-```bash
-java -jar CitySurvival.jar
-```
-
-> Java 17 or newer is required. Keep `assets/` and `map.txt` in the same folder as the JAR.
+> This is a Java Swing desktop application, so it does not run directly inside a normal GitHub web page like an HTML/JavaScript game.
 
 ## Main Features
 
@@ -66,9 +56,9 @@ elona-city-survival-java/
 ├── assets/
 ├── src/
 │   └── citysurvival/
-├── dist/
-│   └── City-Survival-Game.zip
 ├── map.txt
+├── run-game-mac.command
+├── run-game-windows.bat
 ├── README.md
 └── .gitignore
 ```
@@ -78,7 +68,7 @@ elona-city-survival-java/
 - Java 17 or newer
 - Java Swing, included with the standard JDK
 
-## Compile From Source
+## Compile From Source Manually
 
 From the project directory:
 
@@ -87,8 +77,6 @@ mkdir -p out
 javac -d out src/citysurvival/*.java
 java -cp out citysurvival.Main
 ```
-
-The same commands can also be used on Windows through Git Bash or a properly configured VS Code terminal.
 
 ## About the Project
 
