@@ -2,6 +2,42 @@
 
 A Java Swing survival game set in a tile-based city environment. The player explores the map, collects useful items, fights enemies, manages health and inventory, and tries to survive long enough to reach the objective.
 
+## Playable Build
+
+Want to run the game without compiling the source code?
+
+**[Download the playable game package](dist/City-Survival-Game.zip)**
+
+The package includes the runnable JAR, game assets, map file, and launch scripts.
+
+### Run on Windows
+
+1. Download and extract `City-Survival-Game.zip`.
+2. Open the extracted `package` folder.
+3. Double-click `run-windows.bat`.
+
+### Run on macOS
+
+1. Download and extract `City-Survival-Game.zip`.
+2. Open the extracted `package` folder.
+3. Double-click `run-mac.command`.
+
+If macOS blocks the launcher, open Terminal in that folder and run:
+
+```bash
+java -jar CitySurvival.jar
+```
+
+### Run on Linux
+
+Extract the package, open a terminal inside the `package` folder, and run:
+
+```bash
+java -jar CitySurvival.jar
+```
+
+> Java 17 or newer is required. Keep `assets/` and `map.txt` in the same folder as the JAR.
+
 ## Main Features
 
 - Tile-based city map with a scrolling camera
@@ -30,6 +66,8 @@ elona-city-survival-java/
 ├── assets/
 ├── src/
 │   └── citysurvival/
+├── dist/
+│   └── City-Survival-Game.zip
 ├── map.txt
 ├── README.md
 └── .gitignore
@@ -40,7 +78,7 @@ elona-city-survival-java/
 - Java 17 or newer
 - Java Swing, included with the standard JDK
 
-## Compile and Run
+## Compile From Source
 
 From the project directory:
 
